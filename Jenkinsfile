@@ -8,7 +8,10 @@ pipeline
 
             stage("build") 
             {
+                steps
+                {
                 powershell 'Write-Output "Hello, World!"'
+                }
             }
 
     }
