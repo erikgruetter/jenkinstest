@@ -8,7 +8,7 @@ pipeline
 
             stage("build") 
             {
-                touch testjenkins
+                powershell 'Write-Output "Hello, World!"'
             }
 
     }
