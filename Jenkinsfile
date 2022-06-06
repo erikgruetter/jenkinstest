@@ -10,7 +10,8 @@ pipeline
             {
                 steps
                 {
-                powershell 'Write-Output "Hello, World!"'
+                powershell 'Write-Output "Hello, World!"
+                    write-host $env:test'
                 }
             }
 
